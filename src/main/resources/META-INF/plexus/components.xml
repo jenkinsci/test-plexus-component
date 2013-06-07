@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-set>
+  <components>
+    <component>
+      <role>org.apache.maven.artifact.repository.layout.ArtifactRepositoryLayout</role>
+      <role-hint>bogus</role-hint>
+      <implementation>test.BogusRepositoryLayout</implementation>
+    </component>
+
+    <component>
+      <role>org.apache.maven.lifecycle.mapping.LifecycleMapping</role>
+      <role-hint>bogus</role-hint>
+      <implementation>test.BogusLifecycleMapping</implementation>
+      <configuration>
+        <lifecycles>
+          <lifecycle>
+            <id>bogus</id>
+            <phases>
+              <package>
+                org.apache.maven.plugins:maven-jar-plugin:jar
+              </package>
+            </phases>
+          </lifecycle>
+        </lifecycles>
+      </configuration>
+    </component>
+  </components>
+</component-set>
