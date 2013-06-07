@@ -9,7 +9,7 @@
 
   <groupId>org.jenkins-ci.test</groupId>
   <artifactId>sample-plexus-component</artifactId>
-  <version>1.0</version>
+  <version>1.1-SNAPSHOT</version>
 
   <name>sample-plexus-component</name>
 
